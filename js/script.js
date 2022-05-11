@@ -8,8 +8,8 @@
  * Check service worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS2O-PWA-Test/sw.js", {
-    scope: "/ICS2O-PWA-Test/",
+  navigator.serviceWorker.register("/ICS2O-Unit5-07-HTML/sw.js", {
+    scope: "/ICS2O-Unit5-07-HTML/",
   })
 }
 
@@ -25,12 +25,12 @@ function calculate() {
   if (userInput < 0)
   {
     document.getElementById("answer").innerHTML = "Please input a positive whole number!"
-  }
-
-  for (let counter = 1; counter <= userInput; counter++)
+  } else {
+    for (let counter = 1; counter <= userInput; counter++)
     {
       answer += counter;
     }
+  }
   
   // output
   document.getElementById("answer").innerHTML = "The value is " + (answer)
