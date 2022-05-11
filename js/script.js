@@ -14,7 +14,7 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * This function displays an alert.
+ * This function calculates using a for loop.
  */
 function calculate() {
   // input
