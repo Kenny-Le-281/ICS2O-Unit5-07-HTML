@@ -20,16 +20,16 @@ function calculate() {
   // input
   var userInput = document.getElementById("user-input").value
 
-  // process
+  // process and output
   var answer = 0
-  if (userInput < 0) {
+  var userInputAsInt = parseInt(userInput)
+  
+  if (userInputAsInt <= 0) {
     document.getElementById("answer").innerHTML = "Please input a positive whole number!"
   } else {
-    for (let counter = 1; counter <= userInput; counter++) {
+    for (let counter = 1; counter <= userInputAsInt; counter++) {
       answer += counter
     }
+    document.getElementById("answer").innerHTML = "The value is " + (answer)
   }
-  
-  // output
-  document.getElementById("answer").innerHTML = "The value is " + (answer)
 }
