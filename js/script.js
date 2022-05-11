@@ -26,10 +26,9 @@ function calculate() {
   {
     document.getElementById("answer").innerHTML = "Please input a positive whole number!"
   } else {
-    for (let counter = 1; counter <= userInput; counter++)
-    {
-      answer += counter;
-    }
+      for (let counter = 1; counter <= userInput; counter++) {
+        answer += counter;
+      }
   }
   
   // output
